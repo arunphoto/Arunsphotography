@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Arun's Photography — cinematic wedding, couple, baby and traditional photography.">
+<title>Arun's Photography | Timeless Memories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Allura&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08111f;--bg2:#0d1a2b;--gold:#a7b4c8;--gold2:#e6eaf0;--text:#f4f6fa;--muted:#aeb9c9;--line:rgba(167,180,200,.28);--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}button,input,textarea{font:inherit}img{display:block;width:100%;height:100%;object-fit:cover}.container{width:min(var(--max),calc(100% - 56px));margin:auto}
+header{position:fixed;z-index:100;top:0;left:0;right:0;height:86px;background:rgba(5,5,5,.58);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.07);transition:.3s}header.scrolled{background:rgba(5,5,5,.94)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.logo{width:132px}.logo-main{font-family:"Cormorant Garamond",serif;font-size:34px;line-height:.7;font-weight:700;letter-spacing:-2px;color:#f2f5fa}.logo-sub{font-size:7px;letter-spacing:3px;text-align:center;color:var(--gold);margin-top:10px}.navlinks{display:flex;align-items:center;gap:38px;font-size:13px}.navlinks a{position:relative;color:#e8edf5;transition:.25s}.navlinks a:hover,.navlinks a.active{color:var(--gold2)}.navlinks a.active:after{content:"";position:absolute;left:0;right:0;bottom:-11px;margin:auto;width:24px;height:1px;background:var(--gold)}.wa-nav{border:1px solid var(--gold);padding:9px 16px;border-radius:3px;color:var(--gold2)!important}.wa-nav:before{content:"◉ ";font-size:10px}.menu{display:none;background:none;border:0;color:#fff;font-size:28px}
+.hero{height:100vh;min-height:680px;position:relative;overflow:hidden;background:#050b14}.slides,.slide{position:absolute;inset:0}.slide{opacity:0;transform:scale(1.05);transition:opacity 1.1s ease,transform 7s ease}.slide.active{opacity:1;transform:scale(1)}.slide img{object-position:center}.slide:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,24,.84) 0%,rgba(5,15,30,.30) 48%,rgba(4,10,20,.62) 100%),linear-gradient(0deg,rgba(4,10,20,.88),transparent 35%,rgba(4,12,24,.25));z-index:1}.hero-content{position:relative;z-index:3;height:100%;display:flex;align-items:center;justify-content:flex-end}.hero-copy{width:51%;text-align:center;padding-top:55px}.kicker{font-size:12px;letter-spacing:5px;color:#e8edf5;text-transform:uppercase;margin-bottom:8px}.script{font-family:"Allura",cursive;color:var(--gold2);font-size:82px;line-height:.9}.hero-title{font-family:"Cormorant Garamond",serif;font-size:68px;line-height:.88;font-weight:500;color:#e6eaf0;margin:3px 0 13px}.hero-copy p{font-size:11px;letter-spacing:4px;color:#e8edf5;margin-bottom:24px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--gold);background:rgba(0,0,0,.25);color:#fff;padding:10px 18px;border-radius:3px;font-size:12px;font-weight:600;transition:.25s}.btn:hover{background:var(--gold);color:#111}.btn.gold{background:var(--gold);color:#111}.hero-dots{position:absolute;z-index:4;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:9px}.hero-dot{width:9px;height:9px;border-radius:50%;border:0;background:#cfd8e5;opacity:.65;cursor:pointer}.hero-dot.active{background:var(--gold2);opacity:1}.arrow{position:absolute;z-index:5;top:50%;transform:translateY(-50%);width:38px;height:38px;border:1px solid rgba(255,255,255,.55);border-radius:50%;background:rgba(0,0,0,.4);color:#fff;cursor:pointer;font-size:21px}.arrow.prev{left:42px}.arrow.next{right:42px}
+.section{padding:66px 0;border-top:1px solid rgba(255,255,255,.08)}.section-title{text-align:center;margin-bottom:34px}.eyebrow{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:4px;margin-bottom:7px}.section-title h2{font-family:"Cormorant Garamond",serif;color:var(--gold2);font-size:37px;font-weight:500}.section-title p{color:var(--muted);font-size:12px;margin-top:6px}.ornament{color:var(--gold);margin-top:6px;letter-spacing:6px}.ornament:before,.ornament:after{content:"—";margin:0 8px}
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.g{height:285px;overflow:hidden;position:relative;cursor:pointer;background:#111c2b}.g img{transition:transform .7s,filter .5s}.g:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.6),transparent 45%);opacity:0;transition:.35s}.g:hover img{transform:scale(1.07);filter:brightness(.8)}.g:hover:after{opacity:1}.g span{position:absolute;z-index:2;bottom:10px;left:11px;color:#fff;font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:0;transition:.35s}.g:hover span{opacity:1}
+.service-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.service-card{background:linear-gradient(145deg,#0d1a2b,#07101d);border:1px solid rgba(167,180,200,.13);min-height:142px;padding:24px 13px;text-align:center;transition:.3s}.service-card:hover{transform:translateY(-5px);border-color:var(--gold)}.icon{width:42px;height:42px;margin:auto;color:var(--gold);font-size:30px;line-height:42px}.service-card h3{font-family:"Cormorant Garamond",serif;font-size:19px;margin:5px 0;color:#e6eaf0}.service-card p{font-size:10px;color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;min-height:430px}.about-photo{position:relative;min-height:430px;overflow:hidden}.about-photo img{filter:brightness(.45);object-position:center}.about-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.05),#08111f)}.about-copy{display:flex;align-items:center;padding:55px}.about-copy h2{font-family:"Cormorant Garamond",serif;color:var(--gold2);font-size:38px;font-weight:500}.about-copy p{font-size:12px;color:#cfd8e5;max-width:520px;margin:18px 0}.signature{font-family:"Allura",cursive;color:var(--gold2);font-size:39px;margin:12px 0}.about-copy .btn{margin-top:7px}
+.service-list{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;text-align:center}.service-item{padding:0 10px}.service-item .icon{font-size:27px}.service-item h3{font-family:"Cormorant Garamond",serif;color:#f1f4f8;font-size:18px;margin:8px 0}.service-item p{font-size:11px;color:var(--muted)}
+
+.location-section{padding:82px 0 66px;border-top:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,#08111f 0%,#0b1625 100%)}
+.location-wrap{display:grid;grid-template-columns:42% 58%;align-items:stretch;min-height:455px;background:linear-gradient(135deg,#0d1a2b,#07101d);border:1px solid rgba(167,180,200,.24);overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.location-copy{display:flex;flex-direction:column;justify-content:center;padding:52px 48px}
+.location-copy h2{font-family:"Cormorant Garamond",serif;color:var(--gold2);font-size:54px;line-height:.95;font-weight:500;margin:4px 0 14px}
+.location-copy .rating{color:#e6eaf0;font-size:13px;letter-spacing:1.5px;margin-bottom:18px}
+.location-copy .rating span{color:var(--gold);font-weight:700;margin-left:8px}
+.location-copy p{font-size:13px;color:#cfd8e5;max-width:410px;margin-bottom:24px}
+.location-address{display:flex;gap:10px;align-items:flex-start;color:#b9c4d3;font-size:12px;line-height:1.7;margin-bottom:27px}
+.location-address strong{color:var(--gold2);font-weight:600}
+.location-copy .map-btn{align-self:flex-start;background:var(--gold2);color:#08111f;border-color:var(--gold2);padding:13px 22px;letter-spacing:1.5px}
+.location-copy .map-btn:hover{background:var(--gold);border-color:var(--gold);color:#08111f}
+.location-map{min-height:455px;background:#dfe5ea;position:relative}
+.location-map iframe{display:block;width:100%;height:100%;min-height:455px;border:0;filter:saturate(1.05) contrast(.98)}
+.location-map:after{content:"";position:absolute;inset:0;pointer-events:none;border:1px solid rgba(167,180,200,.18)}
+
+@media(max-width:900px){
+.location-wrap{grid-template-columns:1fr}
+.location-copy{padding:42px 34px}
+.location-copy h2{font-size:46px}
+.location-map,.location-map iframe{min-height:390px;height:390px}
+}
+@media(max-width:560px){header{height:72px}.logo-main{font-size:28px}.nav{height:72px}.hero{min-height:640px}.hero-content{justify-content:center}.hero-copy{width:92%;padding-top:45px}.script{font-size:54px}.hero-title{font-size:43px}.hero-copy p{font-size:9px;letter-spacing:2.5px}.arrow.prev{left:12px}.arrow.next{right:12px}.hero-dots{bottom:11px}.section{padding:52px 0}.section-title h2{font-size:32px}.gallery{gap:5px}.g{height:230px}.g:nth-child(9),.g:nth-child(10){grid-column:span 2}.service-cards,.service-list{grid-template-columns:1fr 1fr;gap:9px}.service-card{padding:18px 8px;min-height:140px}.service-card:last-child{grid-column:span 2}.contact-wrap{padding:14px}.contact-info{padding:10px 6px 23px}.contact-info h2{font-size:31px}.footerin{position:relative;display:flex;align-items:center;justify-content:flex-start;gap:8px;padding-right:104px;min-height:58px}.footerin>div+div{margin-top:0}.footer-brand{min-width:0;width:100%;gap:10px}.footer-brand img{width:86px;max-height:40px;flex:0 0 auto}.footer-brand span{display:block;min-width:0;font-size:10px;line-height:1.35}.social{position:absolute;right:8px;top:50%;transform:translateY(-50%);display:flex;margin:0;gap:6px;z-index:5}.social a{width:42px;height:42px;flex:0 0 42px}.social a svg{width:21px;height:21px}.wa-nav{display:none}}
+.location-section{padding:58px 0 48px}
+.location-wrap{min-height:0}
+.location-copy{padding:38px 24px}
+.location-copy h2{font-size:43px}
+.location-copy p{font-size:12px}
+.location-map,.location-map iframe{min-height:300px;height:300px}
+.location-copy .map-btn{width:100%}
+}
+
+.contact-wrap{display:grid;grid-template-columns:38% 62%;background:linear-gradient(120deg,#08111f,#0a1523);border:1px solid rgba(167,180,200,.24);padding:26px}.contact-info{padding:18px 28px}.contact-info h2{font-family:"Cormorant Garamond",serif;color:var(--gold2);font-size:34px;line-height:1}.contact-info p{font-size:12px;color:#b9c4d3;margin:18px 0}.contact-row{display:flex;gap:11px;align-items:center;font-size:12px;margin:11px 0;color:#cfd8e5}.contact-row b{color:var(--gold2)}.wa-btn{margin-top:9px;background:#25D366;border-color:#25D366;color:#06150a}.wa-btn:hover{background:#1ebe5d;color:#fff}.form{padding:5px}.field{margin-bottom:10px}.field input,.field textarea{width:100%;background:#142236;border:1px solid rgba(255,255,255,.12);color:#fff;padding:13px 14px;outline:none;font-size:12px}.field input:focus,.field textarea:focus{border-color:var(--gold)}.field textarea{height:100px;resize:vertical}.form button{width:100%;border:0;background:linear-gradient(90deg,#8fa1b8,#e6eaf0);color:#08111f;font-weight:700;padding:13px;cursor:pointer}
+footer{border-top:1px solid var(--line);padding:15px 0;color:#9eacbf;font-size:11px}.footerin{display:flex;align-items:center;justify-content:space-between}.social{display:flex;gap:13px;margin-left:auto;margin-right:64px;align-items:center;flex-shrink:0}.social a{width:46px;height:46px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold2);text-decoration:none}.social a svg{width:23px;height:23px;display:block;fill:currentColor}.float-wa{position:fixed;z-index:80;right:19px;bottom:19px;width:50px;height:50px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;font-size:27px;box-shadow:0 7px 25px rgba(0,0,0,.45);border:2px solid #fff}.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.96);z-index:200;display:none;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex}.lightbox img{width:auto;height:auto;max-width:94vw;max-height:90vh;object-fit:contain}.close{position:absolute;right:25px;top:15px;border:0;background:none;color:#fff;font-size:40px;cursor:pointer}.lb-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.45);border:1px solid #777;color:#fff;border-radius:50%;width:43px;height:43px;cursor:pointer}.lb-prev{left:20px}.lb-next{right:20px}
+@media(max-width:900px){.container{width:min(var(--max),calc(100% - 32px))}.navlinks{display:none}.menu{display:block}.navlinks.open{display:flex;position:absolute;top:86px;left:16px;right:16px;padding:17px;background:#0b1726;border:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:17px}.hero-copy{width:70%}.script{font-size:64px}.hero-title{font-size:52px}.gallery{grid-template-columns:repeat(2,1fr)}.g{height:270px}.g:nth-child(9),.g:nth-child(10){grid-column:span 2}.service-cards,.service-list{grid-template-columns:repeat(2,1fr)}.service-card:last-child{grid-column:span 2}.about{grid-template-columns:1fr}.about-photo{min-height:340px}.about-copy{padding:40px 25px}.contact-wrap{grid-template-columns:1fr}.contact-info{padding:12px 8px 25px}}
+@media(max-width:560px){header{height:72px}.logo-main{font-size:28px}.nav{height:72px}.hero{min-height:640px}.hero-content{justify-content:center}.hero-copy{width:92%;padding-top:45px}.script{font-size:54px}.hero-title{font-size:43px}.hero-copy p{font-size:9px;letter-spacing:2.5px}.arrow.prev{left:12px}.arrow.next{right:12px}.hero-dots{bottom:11px}.section{padding:52px 0}.section-title h2{font-size:32px}.gallery{gap:5px}.g{height:230px}.g:nth-child(9),.g:nth-child(10){grid-column:span 2}.service-cards,.service-list{grid-template-columns:1fr 1fr;gap:9px}.service-card{padding:18px 8px;min-height:140px}.service-card:last-child{grid-column:span 2}.contact-wrap{padding:14px}.contact-info{padding:10px 6px 23px}.contact-info h2{font-size:31px}.footerin{display:flex;align-items:center;justify-content:space-between;gap:10px}.footerin>div+div{margin-top:0}.social{position:absolute;right:58px;top:50%;transform:translateY(-50%);margin:0;gap:7px}.social a{width:42px;height:42px}.social a svg{width:21px;height:21px}.wa-nav{display:none}}
+
+/* MIDNIGHT SAPPHIRE — NAVY & SILVER MASTER THEME */
+.logo-image{width:150px;height:64px;display:flex;align-items:center}
+.logo-image img{width:100%;height:auto;max-height:62px;object-fit:contain;object-position:left center}
+.footer-brand{display:flex;align-items:center;gap:18px}
+.footer-brand img{width:105px;height:auto;max-height:44px;object-fit:contain}
+.form button{background:linear-gradient(90deg,#8fa1b8,#e6eaf0);color:#07101d}
+.form button:hover{filter:brightness(1.06);box-shadow:0 0 24px rgba(167,180,200,.18)}
+.btn.gold{background:linear-gradient(90deg,#8fa1b8,#e6eaf0);color:#07101d}
+.btn.gold:hover{background:#f3f6fa;color:#07101d}
+.wa-nav{border-color:#a7b4c8;color:#e6eaf0!important;background:rgba(19,41,72,.28)}
+.wa-nav:hover{background:#132948!important;color:#fff!important}
+.float-wa{box-shadow:0 7px 25px rgba(0,0,0,.55),0 0 0 1px rgba(167,180,200,.25)}
+
+/* ===== NEW GALLERY & TESTIMONIALS ===== */
+.featured-gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:8px}
+.featured-gallery .fg{position:relative;overflow:hidden;cursor:pointer;background:#0b1728;border:1px solid rgba(167,180,200,.12)}
+.featured-gallery .fg:nth-child(1){grid-column:span 5;grid-row:span 2}
+.featured-gallery .fg:nth-child(2){grid-column:span 4;grid-row:span 2}
+.featured-gallery .fg:nth-child(3){grid-column:span 3;grid-row:span 3}
+.featured-gallery .fg:nth-child(4){grid-column:span 4;grid-row:span 2}
+.featured-gallery .fg:nth-child(5){grid-column:span 5;grid-row:span 2}
+.featured-gallery .fg:nth-child(6){grid-column:span 3;grid-row:span 2}
+.featured-gallery .fg img{transition:transform .8s ease,filter .5s ease}
+.featured-gallery .fg:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(4,10,20,.82),transparent 55%);opacity:.2;transition:.35s}
+.featured-gallery .fg:hover img{transform:scale(1.08);filter:brightness(.72)}
+.featured-gallery .fg:hover:before{opacity:1}
+.fg-caption{position:absolute;z-index:2;left:16px;bottom:13px;right:12px;display:flex;align-items:end;justify-content:space-between;opacity:0;transform:translateY(8px);transition:.35s}
+.fg:hover .fg-caption{opacity:1;transform:none}
+.fg-caption b{font-family:"Cormorant Garamond",serif;font-size:20px;color:#f3f6fa;font-weight:500}
+.fg-caption span{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#aeb9c9}
+.gallery-note{text-align:center;margin-top:17px;color:#8f9db0;font-size:10px;letter-spacing:1.2px}
+
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.testimonial{position:relative;background:linear-gradient(145deg,#0d1b2e,#081321);border:1px solid rgba(167,180,200,.17);padding:28px 24px 24px;min-height:235px;transition:.3s}
+.testimonial:hover{transform:translateY(-5px);border-color:rgba(167,180,200,.5);box-shadow:0 15px 35px rgba(0,0,0,.22)}
+.quote-mark{font-family:Georgia,serif;color:#a7b4c8;font-size:48px;line-height:.5;margin-bottom:12px}
+.testimonial p{font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.3;color:#edf1f6}
+.stars{letter-spacing:3px;color:#d9e0ea;font-size:13px;margin:17px 0 10px}
+.client{display:flex;align-items:center;gap:11px}
+.client-avatar{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#132948;border:1px solid #718198;color:#e6eaf0;font-size:12px}
+.client b{font-size:11px;color:#e6eaf0;display:block}
+.client span{font-size:9px;color:#8f9db0;display:block;margin-top:2px}
+.testimonial-tag{position:absolute;right:18px;top:18px;font-size:8px;letter-spacing:2px;color:#738198;text-transform:uppercase}
+
+@media(max-width:900px){
+  .featured-gallery{grid-template-columns:repeat(6,1fr);grid-auto-rows:145px}
+  .featured-gallery .fg:nth-child(1){grid-column:span 3;grid-row:span 2}
+  .featured-gallery .fg:nth-child(2){grid-column:span 3;grid-row:span 2}
+  .featured-gallery .fg:nth-child(3){grid-column:span 3;grid-row:span 2}
+  .featured-gallery .fg:nth-child(4){grid-column:span 3;grid-row:span 2}
+  .featured-gallery .fg:nth-child(5){grid-column:span 3;grid-row:span 2}
+  .featured-gallery .fg:nth-child(6){grid-column:span 3;grid-row:span 2}
+  .testimonials{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .featured-gallery{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:175px}
+  .featured-gallery .fg:nth-child(n){grid-column:span 1;grid-row:span 1}
+  .featured-gallery .fg:nth-child(1),.featured-gallery .fg:nth-child(4){grid-column:span 2}
+  .testimonial{padding:24px 19px}
+}
+
+
+/* ===== PREMIUM ABOUT US / TWO-PAGE HERITAGE DESIGN ===== */
+
+/* ===== PREMIUM ABOUT US · MIDNIGHT SAPPHIRE ===== */
+.about-master{
+  background:
+    radial-gradient(circle at 12% 12%,rgba(43,72,108,.18),transparent 32%),
+    radial-gradient(circle at 88% 78%,rgba(201,167,106,.07),transparent 30%),
+    #050d18;
+  border-top:1px solid rgba(201,167,106,.18);
+}
+.about-page{
+  position:relative;
+  min-height:900px;
+  padding:96px 0 88px;
+  overflow:hidden;
+  border-bottom:1px solid rgba(201,167,106,.18);
+}
+.about-page:before{
+  content:"";
+  position:absolute;
+  inset:22px;
+  border:1px solid rgba(152,171,198,.13);
+  pointer-events:none;
+}
+.about-page:after{
+  content:"";
+  position:absolute;
+  width:360px;height:360px;
+  border:1px solid rgba(201,167,106,.07);
+  border-radius:50%;
+  right:-190px;bottom:-180px;
+  box-shadow:0 0 0 38px rgba(201,167,106,.018),0 0 0 76px rgba(201,167,106,.012);
+}
+.about-page .container{position:relative;z-index:2}
+.about-kicker{
+  font-size:10px;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  color:#c9a76a;
+  margin-bottom:16px;
+}
+.about-title{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(54px,6vw,88px);
+  line-height:.82;
+  font-weight:500;
+  letter-spacing:-1px;
+  color:#f2f5f9;
+  margin:0;
+}
+.about-title span{
+  display:block;
+  margin-top:14px;
+  color:#d6b36f;
+  font-family:"Allura",cursive;
+  font-size:.72em;
+  line-height:1;
+  font-weight:400;
+  letter-spacing:0;
+}
+.about-rule{
+  width:105px;
+  height:1px;
+  margin:25px 0;
+  background:linear-gradient(90deg,#d6b36f,#d6b36f 55%,transparent);
+  position:relative;
+}
+.about-rule:after{
+  content:"◆";
+  position:absolute;
+  left:50%;top:-6px;
+  transform:translateX(-50%);
+  font-size:7px;color:#d6b36f;
+}
+.about-lead{
+  max-width:590px;
+  color:#c3cedb;
+  font-size:16px;
+  line-height:1.85;
+}
+.about-tagline{
+  display:inline-block;
+  margin-top:25px;
+  padding:13px 20px;
+  border:1px solid rgba(201,167,106,.42);
+  background:rgba(4,13,24,.55);
+  color:#eef2f7;
+  font-family:"Cormorant Garamond",serif;
+  font-size:20px;
+  font-style:italic;
+  letter-spacing:.2px;
+}
+
+/* PAGE 01 */
+.heritage-page{min-height:980px}
+.heritage-head{
+  display:grid;
+  grid-template-columns:.92fr 1.08fr;
+  gap:54px;
+  align-items:center;
+  margin-bottom:64px;
+}
+.heritage-copy{padding-left:10px}
+.heritage-copy .about-title{font-size:clamp(58px,6.2vw,92px)}
+.heritage-copy .about-title span{font-size:.66em}
+.heritage-hero{
+  height:410px;
+  border:1px solid rgba(201,167,106,.55);
+  padding:7px;
+  background:#07111d;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 24px 65px rgba(0,0,0,.30);
+}
+.heritage-hero:before{
+  content:"";
+  position:absolute;
+  inset:13px;
+  border:1px solid rgba(235,216,175,.18);
+  z-index:3;
+  pointer-events:none;
+}
+.heritage-hero img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center;
+  filter:saturate(.72) contrast(1.08) brightness(.84);
+  transition:transform .8s;
+}
+.heritage-hero:hover img{transform:scale(1.035)}
+.heritage-overlay{
+  position:absolute;
+  left:35px;bottom:29px;
+  z-index:4;
+  color:#fff;
+  text-shadow:0 3px 20px #000;
+}
+.heritage-overlay b{
+  display:block;
+  font-family:"Cormorant Garamond",serif;
+  font-size:30px;
+  font-weight:500;
+}
+.heritage-overlay small{
+  display:block;
+  margin-top:3px;
+  color:#d7b673;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-size:9px;
+}
+
+.founders-intro{
+  text-align:center;
+  margin:0 auto 34px;
+  max-width:760px;
+}
+.founders-intro .about-kicker{margin-bottom:10px}
+.founders-intro h3{
+  margin:0;
+  color:#eef2f8;
+  font-family:"Cormorant Garamond",serif;
+  font-size:42px;
+  font-weight:500;
+}
+.founders-intro h3:before,
+.founders-intro h3:after{
+  content:"—";
+  color:#d6b36f;
+  margin:0 14px;
+  font-size:25px;
+}
+.founders-intro p{
+  color:#8fa4bd;
+  font-size:13px;
+  margin-top:9px;
+}
+
+.founder-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.founder-card{
+  position:relative;
+  padding:14px 14px 19px;
+  border:1px solid rgba(151,170,195,.28);
+  background:
+    linear-gradient(145deg,rgba(16,31,48,.78),rgba(4,13,23,.96));
+  box-shadow:0 18px 45px rgba(0,0,0,.16);
+  transition:transform .35s,border-color .35s,box-shadow .35s;
+}
+.founder-card:after{
+  content:"";
+  position:absolute;
+  inset:6px;
+  border:1px solid rgba(201,167,106,.10);
+  pointer-events:none;
+}
+.founder-card:hover{
+  transform:translateY(-6px);
+  border-color:rgba(201,167,106,.65);
+  box-shadow:0 24px 55px rgba(0,0,0,.28);
+}
+.founder-number{
+  position:absolute;
+  top:20px;left:20px;
+  width:38px;height:38px;
+  border:1px solid #d2ae6b;
+  border-radius:50%;
+  display:grid;place-items:center;
+  color:#d8b574;
+  background:#07111e;
+  font-family:"Cormorant Garamond",serif;
+  font-size:17px;
+  z-index:4;
+}
+.founder-img{
+  height:260px;
+  overflow:hidden;
+  background:#05090e;
+  border:1px solid rgba(201,167,106,.25);
+}
+.founder-img img{
+  width:100%;height:100%;
+  object-fit:cover;
+  filter:grayscale(1) contrast(1.08) brightness(.94);
+  transition:transform .6s,filter .6s;
+}
+.founder-card:hover .founder-img img{
+  transform:scale(1.04);
+  filter:grayscale(.35) contrast(1.06);
+}
+.founder-copy{text-align:center;padding:18px 12px 3px}
+.founder-copy h4{
+  margin:0;
+  color:#d7b36e;
+  font-family:"Cormorant Garamond",serif;
+  font-size:26px;
+  font-weight:600;
+}
+.founder-copy .role{
+  color:#eef1f5;
+  margin:3px 0 15px;
+  font-family:"Cormorant Garamond",serif;
+  font-size:14px;
+}
+.founder-copy p{
+  max-width:255px;
+  margin:0 auto;
+  color:#c0cad6;
+  font-size:12.5px;
+  line-height:1.75;
+}
+.legacy-stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  margin-top:34px;
+  border:1px solid rgba(201,167,106,.38);
+  background:rgba(5,15,26,.72);
+}
+.legacy-stat{
+  min-height:82px;
+  padding:17px 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  border-right:1px solid rgba(151,170,195,.18);
+}
+.legacy-stat:last-child{border-right:0}
+.legacy-stat strong{
+  color:#d8b574;
+  font-family:"Cormorant Garamond",serif;
+  font-size:27px;
+  font-weight:500;
+}
+.legacy-stat span{
+  color:#c0ccda;
+  font-size:10px;
+  line-height:1.4;
+  text-transform:uppercase;
+  letter-spacing:1.4px;
+}
+
+/* PAGE 02 */
+.owner-page{
+  min-height:920px;
+  background:
+    radial-gradient(circle at 85% 20%,rgba(34,64,98,.17),transparent 34%),
+    #050e1a;
+}
+.owner-layout{
+  display:grid;
+  grid-template-columns:.82fr 1.18fr;
+  gap:68px;
+  align-items:center;
+}
+.owner-photo{
+  height:650px;
+  border:1px solid rgba(201,167,106,.62);
+  padding:10px;
+  position:relative;
+  background:#07111d;
+  box-shadow:0 26px 70px rgba(0,0,0,.32);
+}
+.owner-photo:before,.owner-photo:after{
+  content:"";
+  position:absolute;
+  width:48px;height:48px;
+  border-color:#d6b36f;
+  z-index:4;
+}
+.owner-photo:before{top:3px;left:3px;border-top:1px solid;border-left:1px solid}
+.owner-photo:after{bottom:3px;right:3px;border-bottom:1px solid;border-right:1px solid}
+.owner-photo img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center top;
+  filter:saturate(.94) contrast(1.03);
+}
+.owner-photo .photo-caption{
+  position:absolute;
+  left:26px;bottom:22px;
+  z-index:5;
+  padding:7px 12px;
+  background:rgba(4,10,17,.75);
+  border-left:1px solid #d6b36f;
+  color:#e3c17d;
+  font-size:9px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+.owner-copy .about-kicker{margin-bottom:12px}
+.owner-copy .about-title{
+  font-size:clamp(54px,5vw,78px);
+  margin-bottom:7px;
+}
+.owner-copy h3{
+  margin:0;
+  color:#edf1f6;
+  font-family:"Cormorant Garamond",serif;
+  font-size:32px;
+  font-weight:500;
+}
+.owner-quote{
+  margin:19px 0 24px;
+  padding:7px 0 8px 19px;
+  border-left:1px solid #d6b36f;
+  color:#e8edf3;
+  font-family:"Cormorant Garamond",serif;
+  font-size:22px;
+  font-style:italic;
+}
+.owner-copy p{
+  margin:0 0 15px;
+  color:#bcc8d7;
+  font-size:14.5px;
+  line-height:1.86;
+}
+.owner-copy p strong{color:#d9b572}
+.owner-pillars{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  margin-top:27px;
+  border:1px solid rgba(151,170,195,.25);
+  background:rgba(8,19,32,.62);
+}
+.owner-pillar{
+  min-height:108px;
+  padding:17px 8px;
+  text-align:center;
+  border-right:1px solid rgba(151,170,195,.17);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.owner-pillar:last-child{border-right:0}
+.owner-pillar .pillar-icon{color:#d6b36f;font-size:23px;margin-bottom:7px}
+.owner-pillar b{
+  color:#eef1f5;
+  font-family:"Cormorant Garamond",serif;
+  font-size:15px;
+  font-weight:500;
+}
+.owner-pillar span{
+  margin-top:3px;
+  color:#8299b4;
+  font-size:9px;
+  text-transform:uppercase;
+  letter-spacing:1.2px;
+}
+.owner-drives{
+  margin-top:38px;
+}
+.owner-drives-title{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  margin-bottom:20px;
+  color:#d8b574;
+  font-size:10px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+}
+.owner-drives-title:before,.owner-drives-title:after{
+  content:"";
+  height:1px;
+  flex:1;
+  background:linear-gradient(90deg,transparent,rgba(201,167,106,.5));
+}
+.owner-drives-title:after{background:linear-gradient(90deg,rgba(201,167,106,.5),transparent)}
+.drives-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+}
+.drive{
+  text-align:center;
+  padding:0 14px;
+  border-right:1px solid rgba(151,170,195,.16);
+}
+.drive:last-child{border-right:0}
+.drive .drive-icon{color:#d6b36f;font-size:23px;margin-bottom:6px}
+.drive h4{
+  margin:0 0 5px;
+  color:#d9b572;
+  font-family:"Cormorant Garamond",serif;
+  font-size:16px;
+  font-weight:500;
+}
+.drive p{
+  margin:0;
+  color:#aebccc;
+  font-size:11px;
+  line-height:1.55;
+}
+.owner-cta{
+  margin-top:30px;
+  padding:15px 17px;
+  border:1px solid rgba(201,167,106,.38);
+  background:rgba(10,23,39,.58);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.owner-cta p{
+  margin:0;
+  color:#e0e6ee;
+  font-family:"Cormorant Garamond",serif;
+  font-size:17px;
+}
+.owner-cta .btn{white-space:nowrap}
+
+/* about page responsive */
+@media(max-width:980px){
+  .heritage-head,.owner-layout{grid-template-columns:1fr;gap:34px}
+  .heritage-copy{padding-left:0}
+  .heritage-hero{height:390px}
+  .owner-photo{height:600px;max-width:620px;margin:auto;width:100%}
+  .owner-copy{max-width:780px;margin:auto}
+  .founder-grid{grid-template-columns:1fr 1fr}
+  .founder-card:last-child{grid-column:1/-1;max-width:360px;width:100%;margin:auto}
+  .drives-grid{grid-template-columns:1fr 1fr;row-gap:22px}
+  .drive:nth-child(2){border-right:0}
+}
+@media(max-width:700px){
+  .about-page{padding:70px 0}
+  .about-page:before{inset:11px}
+  .heritage-page{min-height:auto}
+  .heritage-head{margin-bottom:48px}
+  .heritage-hero{height:300px}
+  .founder-grid{grid-template-columns:1fr}
+  .founder-card:last-child{grid-column:auto;max-width:none}
+  .founder-img{height:300px}
+  .legacy-stats{grid-template-columns:1fr 1fr}
+  .legacy-stat:nth-child(2){border-right:0}
+  .legacy-stat:nth-child(-n+2){border-bottom:1px solid rgba(151,170,195,.18)}
+  .owner-page{min-height:auto}
+  .owner-photo{height:500px}
+  .owner-pillars{grid-template-columns:1fr 1fr}
+  .owner-pillar:nth-child(2){border-right:0}
+  .owner-pillar:nth-child(-n+2){border-bottom:1px solid rgba(151,170,195,.16)}
+  .owner-cta{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:480px){
+  .about-title,.heritage-copy .about-title{font-size:53px}
+  .about-lead{font-size:14px}
+  .about-tagline{font-size:18px}
+  .heritage-hero{height:250px}
+  .heritage-overlay{left:24px;bottom:21px}
+  .heritage-overlay b{font-size:24px}
+  .founders-intro h3{font-size:31px}
+  .founders-intro h3:before,.founders-intro h3:after{display:none}
+  .founder-img{height:275px}
+  .legacy-stats{grid-template-columns:1fr}
+  .legacy-stat{border-right:0!important;border-bottom:1px solid rgba(151,170,195,.18)}
+  .legacy-stat:last-child{border-bottom:0}
+  .owner-photo{height:440px}
+  .owner-copy h3{font-size:27px}
+  .owner-quote{font-size:19px}
+  .owner-pillars,.drives-grid{grid-template-columns:1fr 1fr}
+}
+
+/* Collection portfolio */
+.category-portfolio .section-title p{max-width:760px;margin:14px auto 0}.portfolio-category{margin-top:54px;padding-top:30px;border-top:1px solid rgba(167,180,200,.18)}.portfolio-category:first-of-type{margin-top:20px}.category-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:20px}.category-heading>div{min-width:0}.category-index{display:block;color:#a7b4c8;font-size:11px;letter-spacing:4px;margin-bottom:7px}.category-heading h3{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:500;letter-spacing:.2px}.category-heading p{color:#9eacc0;max-width:700px;margin-top:5px;font-size:14px}.category-link{flex:none;border:1px solid rgba(167,180,200,.42);padding:10px 17px;text-transform:uppercase;letter-spacing:1.5px;font-size:10px;color:#e6eaf0;transition:.3s}.category-link:hover{border-color:#e6eaf0;background:rgba(167,180,200,.08)}.category-link span{margin-left:7px}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.category-image{position:relative;display:block;height:270px;overflow:hidden;border:1px solid rgba(167,180,200,.16);background:#0b1728}.category-image img{transition:transform .6s ease,filter .4s ease}.category-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,10,20,.78),transparent 55%)}.category-image:hover img{transform:scale(1.05);filter:brightness(.76)}.category-image span{position:absolute;z-index:2;left:15px;bottom:14px;font-family:"Cormorant Garamond",serif;font-size:18px;color:#f4f6fa}.collection-note{text-align:center;color:#8f9db0;font-size:11px;letter-spacing:.5px;margin:30px auto 0;max-width:850px}.collection-note strong{color:#c9d1dd}@media(max-width:900px){.category-grid{grid-template-columns:repeat(2,1fr)}.category-heading{align-items:flex-start}.category-heading h3{font-size:29px}}@media(max-width:560px){.category-heading{display:block}.category-link{display:inline-block;margin-top:13px}.category-grid{grid-template-columns:1fr 1fr;gap:7px}.category-image{height:210px}.category-heading p{font-size:13px}.portfolio-category{margin-top:40px}}
+
+/* Cinematic video showcase */
+.cinematic-videos .section-title p{max-width:760px;margin:14px auto 0}.video-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin:28px 0 20px}.video-heading>div{min-width:0}.video-index{display:block;color:#a7b4c8;font-size:11px;letter-spacing:4px;margin-bottom:7px}.video-heading h3{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:500;letter-spacing:.2px}.video-heading p{color:#9eacc0;max-width:700px;margin-top:5px;font-size:14px}.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.video-card{position:relative;overflow:visible;border:1px solid rgba(167,180,200,.16);background:#0b1728;min-height:300px}.video-card video{display:block;width:100%;height:360px;object-fit:cover;background:#07111f}.video-card.placeholder{height:360px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0b1728,#111d2e)}.video-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#a7b4c8;text-align:center;letter-spacing:2px}.video-placeholder .vp-number{font-family:"Cormorant Garamond",serif;font-size:44px;color:#e6eaf0;letter-spacing:1px}.video-placeholder small{margin-top:8px;text-transform:uppercase;font-size:10px}.video-label{position:absolute;left:0;top:-34px;bottom:auto;z-index:3;font-family:"Cormorant Garamond",serif;font-size:20px;color:#f4f6fa;text-shadow:0 2px 8px rgba(0,0,0,.65)}.video-card.has-video:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(4,10,20,.6),transparent 35%)}.video-card.has-video video{position:relative;z-index:1}.video-card.has-video .video-label{z-index:3}.video-actions{text-align:center;margin-top:28px}@media(max-width:700px){.video-grid{grid-template-columns:1fr}.video-card video,.video-card.placeholder{height:280px}.video-heading{display:block}.video-heading h3{font-size:29px}.video-heading .category-link{display:inline-block;margin-top:13px}}
+</style>
+
+<style>
+/* Mobile stability fixes — keeps the existing visual system intact */
+html,body{max-width:100%;overflow-x:hidden;}
+.float-wa{width:50px;height:50px;right:18px;bottom:18px;display:grid;place-items:center;z-index:9999;}
+.float-wa svg{width:25px;height:25px;display:block;fill:currentColor;}
+@media(max-width:700px){
+  .container{width:calc(100% - 28px);}
+  .category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+  .category-image{height:auto;aspect-ratio:4/5;}
+  .category-image img{width:100%;height:100%;object-fit:cover;object-position:center center;}
+  .video-grid{grid-template-columns:1fr;}
+  .video-card video,.video-card.placeholder{height:auto;min-height:0;aspect-ratio:16/9;object-fit:contain;}
+  .video-card.has-video video{height:100%;width:100%;object-fit:contain;}
+  .video-label{left:0;top:-29px;bottom:auto;font-size:18px;}
+  .float-wa{right:14px;bottom:max(14px,env(safe-area-inset-bottom));width:48px;height:48px;}
+  .float-wa svg{width:24px;height:24px;}
+  .heritage-hero img{object-position:center center;}
+}
+@media(max-width:480px){
+  .category-image{aspect-ratio:4/5;}
+  .video-card video,.video-card.placeholder{aspect-ratio:16/9;}
+}
+</style>
+
+<style>
+/* Mobile-only image framing fixes — desktop design remains unchanged */
+@media (max-width:700px){
+  /* Home hero: keep faces/subjects visible instead of losing them to the mobile crop. */
+  .hero .slide:nth-child(1) img{object-position:center 38%;}
+  .hero .slide:nth-child(2) img{object-position:center 42%;}
+  .hero .slide:nth-child(3) img{object-position:center 46%;}
+
+  /* About Us · three founders: cinematic portrait framing with the important subject visible. */
+  .founder-img{
+    height:300px;
+    aspect-ratio:auto;
+  }
+  .founder-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .6s ease,filter .6s ease;
+  }
+  .founder-card:nth-child(1) .founder-img img{object-position:center 18%;}
+  .founder-card:nth-child(2) .founder-img img{object-position:42% 42%;}
+  .founder-card:nth-child(3) .founder-img img{object-position:center 25%;}
+
+  /* Current owner Arun: keep face and upper body comfortably inside the mobile frame. */
+  .owner-photo{height:500px;}
+  .owner-photo img{object-fit:cover;object-position:center 28%;}
+}
+
+@media (max-width:480px){
+  .hero .slide:nth-child(1) img{object-position:center 36%;}
+  .hero .slide:nth-child(2) img{object-position:center 40%;}
+  .hero .slide:nth-child(3) img{object-position:center 45%;}
+
+  .founder-img{height:275px;}
+  .founder-card:nth-child(1) .founder-img img{object-position:center 17%;}
+  .founder-card:nth-child(2) .founder-img img{object-position:42% 42%;}
+  .founder-card:nth-child(3) .founder-img img{object-position:center 23%;}
+
+  .owner-photo{height:440px;}
+  .owner-photo img{object-position:center 27%;}
+}
+</style>
+
+<style>
+/* Why Couples Choose Arun's Photography */
+.why-choose{
+  position:relative;
+  padding:78px 0 72px;
+  background:
+    radial-gradient(circle at 14% 18%,rgba(73,102,138,.10),transparent 30%),
+    radial-gradient(circle at 88% 82%,rgba(201,167,106,.06),transparent 28%),
+    linear-gradient(180deg,#08111f 0%,#0a1523 100%);
+  border-top:1px solid rgba(167,180,200,.14);
+}
+.why-choose .section-title{
+  max-width:780px;
+  margin:0 auto 38px;
+}
+.why-choose .section-title p{
+  max-width:700px;
+  margin:10px auto 0;
+}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+.why-card{
+  position:relative;
+  min-height:170px;
+  padding:25px 20px 23px;
+  text-align:center;
+  background:linear-gradient(145deg,rgba(17,32,51,.92),rgba(6,16,28,.98));
+  border:1px solid rgba(167,180,200,.17);
+  box-shadow:0 15px 35px rgba(0,0,0,.16);
+  overflow:hidden;
+  transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;
+}
+.why-card:before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:56px;
+  height:1px;
+  transform:translateX(-50%);
+  background:#d6b36f;
+  opacity:.7;
+}
+.why-card:after{
+  content:"✦";
+  position:absolute;
+  top:11px;
+  right:13px;
+  font-size:8px;
+  color:#d6b36f;
+  opacity:.8;
+}
+.why-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(214,179,111,.55);
+  box-shadow:0 22px 42px rgba(0,0,0,.24);
+}
+.why-number{
+  display:inline-block;
+  color:#a7b4c8;
+  font-size:9px;
+  letter-spacing:3px;
+  margin-bottom:11px;
+}
+.why-icon{
+  width:40px;
+  height:40px;
+  margin:0 auto 11px;
+  display:grid;
+  place-items:center;
+  color:#d6b36f;
+  border:1px solid rgba(214,179,111,.34);
+  border-radius:50%;
+  font-size:18px;
+  background:rgba(7,17,29,.55);
+}
+.why-card h3{
+  margin:0;
+  color:#eef2f7;
+  font-family:"Cormorant Garamond",serif;
+  font-size:22px;
+  line-height:1.05;
+  font-weight:500;
+}
+.why-card p{
+  margin:9px auto 0;
+  max-width:235px;
+  color:#94a8bd;
+  font-size:11px;
+  line-height:1.6;
+}
+.why-card.featured{
+  border-color:rgba(214,179,111,.34);
+}
+.why-card.featured h3{color:#f0d29a}
+@media(max-width:900px){
+  .why-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:560px){
+  .why-choose{padding:58px 0 52px;}
+  .why-grid{grid-template-columns:1fr 1fr;gap:9px;}
+  .why-card{min-height:158px;padding:21px 12px 18px;}
+  .why-card h3{font-size:19px;}
+  .why-card p{font-size:10px;}
+}
+@media(max-width:420px){
+  .why-grid{grid-template-columns:1fr;}
+}
+</style>
+
+</head>
+<body>
+<header id="header"><div class="container nav"><a class="logo logo-image" href="#home" aria-label="Arun's Photography"><img src="images/aruns-logo.png" alt="Arun's Photography logo"></a><nav class="navlinks" id="navlinks"><a class="active" href="#home">Home</a><a href="#portfolio">Portfolio</a><a href="#gallery">Gallery</a><a href="#testimonials">Testimonials</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a><a class="wa-nav" href="https://www.instagram.com/aruns_photography_madurai?igsi=MWF2d2dudW45b2M4bg==" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a><a class="wa-nav" href="https://wa.me/919025166520" target="_blank">WhatsApp Us</a></nav><button class="menu" id="menu" aria-label="Open menu">☰</button></div></header>
+<main>
+<section class="hero" id="home"><div class="slides"><div class="slide active"><img src="images/hero-1.jpg" alt="Arun's Photography wedding couple"></div><div class="slide"><img src="images/hero-2.jpg" alt="Arun's Photography traditional wedding"></div><div class="slide"><img src="images/hero-3.jpg" alt="Arun's Photography couple portrait"></div></div><button class="arrow prev" id="prev">‹</button><button class="arrow next" id="next">›</button><div class="container hero-content"><div class="hero-copy"><div class="kicker">CAPTURING</div><div class="script">Timeless</div><div class="hero-title">Memories</div><p>THAT LAST FOREVER</p><a class="btn" href="#portfolio">View Portfolio</a></div></div><div class="hero-dots"><button class="hero-dot active" data-i="0"></button><button class="hero-dot" data-i="1"></button><button class="hero-dot" data-i="2"></button></div></section>
+<section class="section category-portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Five collections · One visual signature</div>
+      <h2>Our Portfolio</h2>
+      <div class="ornament">✦</div>
+      <p>Explore our photography by story and occasion. Each collection is curated to keep the Arun’s Photography experience elegant and focused.</p>
+    </div>
+
+    <div class="portfolio-category">
+      <div class="category-heading"><div><span class="category-index"></span><h3>Wedding / Reception Photography</h3><p>From sacred rituals to candid celebrations, every chapter of your wedding story.</p></div><a class="category-link" href="collection-wedding.html">View More <span>→</span></a></div>
+      <div class="category-grid">
+        <a class="category-image" href="collection-wedding.html"><img class="portfolio-image" src="images/wedding/01.jpg" alt="Wedding photography"><span>Wedding Stories</span></a>
+        <a class="category-image" href="collection-wedding.html"><img class="portfolio-image" src="images/wedding/02.jpg" alt="Wedding photography"><span>Wedding Portraits</span></a>
+        <a class="category-image" href="collection-wedding.html"><img class="portfolio-image" src="images/wedding/03.jpg" alt="Wedding photography"><span>Wedding Moments</span></a>
+        <a class="category-image" href="collection-wedding.html"><img class="portfolio-image" src="images/wedding/04.jpg" alt="Wedding photography"><span>Wedding Celebration</span></a>
+      </div>
+    </div>
+
+    <div class="portfolio-category">
+      <div class="category-heading"><div><span class="category-index"></span><h3>Pre &amp; Post-Wedding</h3><p>Natural chemistry, intimate portraits and cinematic couple stories before and after the wedding.</p></div><a class="category-link" href="collection-couples-pre-post-wedding.html">View More <span>→</span></a></div>
+      <div class="category-grid">
+        <a class="category-image" href="collection-couples-pre-post-wedding.html"><img class="portfolio-image" src="images/couples-pre-post-wedding/01.jpg" alt="Couple photography"><span>Couple Story</span></a>
+        <a class="category-image" href="collection-couples-pre-post-wedding.html"><img class="portfolio-image" src="images/couples-pre-post-wedding/02.jpg" alt="Pre-wedding photography"><span>Pre-Wedding</span></a>
+        <a class="category-image" href="collection-couples-pre-post-wedding.html"><img class="portfolio-image" src="images/couples-pre-post-wedding/03.jpg" alt="Couple portrait photography"><span>Portraits</span></a>
+        <a class="category-image" href="collection-couples-pre-post-wedding.html"><img class="portfolio-image" src="images/couples-pre-post-wedding/04.jpg" alt="Post-wedding couple photography"><span>Post-Wedding</span></a>
+      </div>
+    </div>
+
+    <div class="portfolio-category">
+      <div class="category-heading"><div><span class="category-index"></span><h3>Baby Photography</h3><p>Soft, joyful portraits that preserve the little expressions and milestones you never want to forget.</p></div><a class="category-link" href="collection-baby.html">View More <span>→</span></a></div>
+      <div class="category-grid">
+        <a class="category-image" href="collection-baby.html"><img class="portfolio-image" src="images/baby/01.jpg" alt="Baby photography"><span>Little Moments</span></a>
+        <a class="category-image" href="collection-baby.html"><img class="portfolio-image" src="images/baby/02.jpg" alt="Baby portrait photography"><span>Baby Portraits</span></a>
+        <a class="category-image" href="collection-baby.html"><img class="portfolio-image" src="images/baby/03.jpg" alt="Baby photography"><span>Baby Moments</span></a>
+        <a class="category-image" href="collection-baby.html"><img class="portfolio-image" src="images/baby/04.jpg" alt="Baby portrait photography"><span>Sweet Memories</span></a>
+      </div>
+    </div>
+
+    <div class="portfolio-category">
+      <div class="category-heading"><div><span class="category-index"></span><h3>Aesthetic Photography</h3><p>Culture, rituals, heritage and traditional celebrations captured with authenticity and elegance.</p></div><a class="category-link" href="collection-traditional.html">View More <span>→</span></a></div>
+      <div class="category-grid">
+        <a class="category-image" href="collection-traditional.html"><img class="portfolio-image" src="images/traditional/01.jpg" alt="Traditional wedding photography"><span>Traditions</span></a>
+        <a class="category-image" href="collection-traditional.html"><img class="portfolio-image" src="images/traditional/02.jpg" alt="Traditional couple photography"><span>Heritage Moments</span></a>
+        <a class="category-image" href="collection-traditional.html"><img class="portfolio-image" src="images/traditional/03.jpg" alt="Temple traditional photography"><span>Temple Stories</span></a>
+        <a class="category-image" href="collection-traditional.html"><img class="portfolio-image" src="images/traditional/04.jpg" alt="Traditional photography"><span>Traditional Moments</span></a>
+      </div>
+    </div>
+
+    <div class="portfolio-category">
+      <div class="category-heading"><div><span class="category-index"></span><h3>Maternity Photography</h3><p>Elegant portraits celebrating motherhood, connection and the beautiful journey to new beginnings.</p></div><a class="category-link" href="collection-maternity.html">View More <span>→</span></a></div>
+      <div class="category-grid">
+        <a class="category-image" href="collection-maternity.html"><img class="portfolio-image" src="images/maternity/01.jpg" alt="Maternity photography"><span>Motherhood</span></a>
+        <a class="category-image" href="collection-maternity.html"><img class="portfolio-image" src="images/maternity/02.jpg" alt="Maternity photography"><span>Motherhood Moments</span></a>
+        <a class="category-image" href="collection-maternity.html"><img class="portfolio-image" src="images/maternity/03.jpg" alt="Maternity photography"><span>Beautiful Journey</span></a>
+        <a class="category-image" href="collection-maternity.html"><img class="portfolio-image" src="images/maternity/04.jpg" alt="Maternity photography"><span>New Beginnings</span></a>
+      </div>
+    </div>
+
+    <p class="collection-note">The homepage shows a curated preview from each collection, while <strong>View More</strong> opens the complete collection.</p>
+  </div>
+</section>
+
+
+<section class="section cinematic-videos" id="cinematic-videos">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Motion · Emotion · Story</div>
+      <h2>Cinematic Stories</h2>
+      <div class="ornament">✦</div>
+      <p>Watch a glimpse of our cinematic work, crafted to turn real moments into timeless films.</p>
+    </div>
+
+    <div class="video-heading">
+      <div><span class="video-index"></span><h3>Cinematic Videos</h3><p>A current Arun’s Photography shoot, presented as a cinematic preview.</p></div>
+      <a class="category-link" href="videos.html">View More <span>→</span></a>
+    </div>
+
+    <div class="video-grid">
+      <article class="video-card has-video">
+        <video controls preload="metadata" playsinline poster="images/videos/cinematic-01.jpg">
+          <source src="videos/cinematic-01.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-label"></div>
+      </article>
+      <article class="video-card has-video">
+        <video controls preload="metadata" playsinline poster="images/videos/cinematic-02.jpg">
+          <source src="videos/cinematic-02.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-label"></div>
+      </article>
+      <article class="video-card has-video">
+        <video controls preload="metadata" playsinline poster="images/videos/cinematic-03.jpg">
+          <source src="videos/cinematic-03.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-label"></div>
+      </article>
+      <article class="video-card has-video">
+        <video controls preload="metadata" playsinline poster="images/videos/cinematic-04.jpg">
+          <source src="videos/cinematic-04.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-label"></div>
+      </article>
+    </div>
+
+    <div class="video-actions"><a class="category-link" href="videos.html">View More Videos <span>→</span></a></div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">A closer look at our stories</div>
+      <h2>Featured Gallery</h2>
+      <div class="ornament">✦</div>
+      <p>Handpicked frames from weddings, couples, traditions, maternity and family celebrations.</p>
+    </div>
+    <div class="featured-gallery">
+      <div class="fg"><img src="images/gallery-01.jpg" alt="Wedding celebration"><div class="fg-caption"><b>Wedding Stories</b><span>01</span></div></div>
+      <div class="fg"><img src="images/gallery-02.jpg" alt="Romantic couple portrait"><div class="fg-caption"><b>Love & Light</b><span>02</span></div></div>
+      <div class="fg"><img src="images/gallery-03.jpg" alt="Traditional wedding portrait"><div class="fg-caption"><b>Traditions</b><span>03</span></div></div>
+      <div class="fg"><img src="images/gallery-04.jpg" alt="Baby photography"><div class="fg-caption"><b>Little Moments</b><span>04</span></div></div>
+      <div class="fg"><img src="images/gallery-06.jpg" alt="Couple photography"><div class="fg-caption"><b>Forever Together</b><span>05</span></div></div>
+      <div class="fg"><img src="images/gallery-10.jpg" alt="Wedding couple"><div class="fg-caption"><b>Timeless Memories</b><span>06</span></div></div>
+    </div>
+    <div class="gallery-note">Click any image in the portfolio or gallery to view it in fullscreen.</div>
+  </div>
+</section>
+
+<section class="section" id="services"><div class="container"><div class="section-title"><div class="eyebrow">Beautifully captured</div><h2>What We Do Best</h2><div class="ornament">✦</div></div><div class="service-cards"><article class="service-card"><div class="icon">◎</div><h3>Wedding Photography</h3><p>Emotional moments, rituals and celebrations.</p></article><article class="service-card"><div class="icon">♧</div><h3>Couple / Pre-Wedding</h3><p>Romantic and cinematic couple stories.</p></article><article class="service-card"><div class="icon">♙</div><h3>Baby Photography</h3><p>Adorable moments of your little ones.</p></article><article class="service-card"><div class="icon">♢</div><h3>Traditional Photography</h3><p>Culture, rituals and timeless portraits.</p></article><article class="service-card"><div class="icon">♡</div><h3>Maternity Photography</h3><p>Elegant portraits celebrating motherhood.</p></article><article class="service-card"><div class="icon">▱</div><h3>Cinematic Videography</h3><p>Turning beautiful moments into films.</p></article></div></div></section>
+
+<section class="about-master" id="about">
+  <!-- =========================================================
+       ABOUT US · PAGE 01 · THREE GENERATION HERITAGE
+       ========================================================= -->
+  <div class="about-page heritage-page" id="about-heritage">
+    <div class="container">
+      <div class="heritage-head">
+        <div class="heritage-copy">
+          <div class="about-kicker">About Us</div>
+          <h2 class="about-title">A LEGACY<span>One Passion</span></h2>
+          <div class="about-rule"></div>
+          <div class="about-kicker" style="letter-spacing:3px;color:#eef1f6;margin-bottom:0">TIMELESS STORYTELLING</div>
+          <p class="about-tagline">“A perfect paradise to capture your happiness.”</p>
+          <p class="about-lead">
+            From intimate portraits to grand celebrations, we create refined photographs and films that keep real emotions close for years to come.
+          </p>
+        </div>
+
+        <div class="heritage-hero">
+          <img src="images/about-heritage-hero.jpg" alt="Arun's Photography — a legacy of visual storytelling">
+          <div class="heritage-overlay">
+            <b>.</b>
+            <small></small>
+          </div>
+        </div>
+      </div>
+
+      <div class="founders-intro">
+        <div class="about-kicker">Our Signature</div>
+        <h3>Every Moment. One Lasting Story.</h3>
+        <p>Thoughtful photography, cinematic films and timeless portraits created to make every memory feel close again.</p>
+      </div>
+
+      <div class="founder-grid">
+        <article class="founder-card">
+          
+         <div class="founder-img">
+            <img class="founder-original-trigger" src="images/founder-sundaram.jpg" alt="Mr. Sundaram — first generation founder">
+          </div>
+          <div class="founder-copy">
+            <h4>Mr. Sundaram</h4>
+            <div class="role"></div>
+            <p>The Founder of our family's photography journey.</p>
+            <h4>The Beginning</h4>
+            
+          </div>
+        </article>
+
+        <article class="founder-card">
+          
+          <div class="founder-img">
+            <img class="founder-original-trigger" src="images/founder-subbiah.jpg" alt="Mr. Subbiah — second generation founder">
+          </div>
+          <div class="founder-copy">
+            <h4>Mr. Subbiah</h4>
+            <div class="role"></div>
+            <p> Carring forward the family's passion for photography.</p>
+            <h4>The Legacy Continues</h4>
+          </div>
+        </article>
+
+        <article class="founder-card">
+        
+          <div class="founder-img">
+            <img class="founder-original-trigger" src="images/founder-raju.jpg" alt="Mr. Raju Karuppiah — third generation founder">
+          </div>
+          <div class="founder-copy">
+            <h4>Mr. Raju @ Karuppiah</h4>
+            <div class="role"></div>
+            <p>Building a trusted name throught creativity and craftsmanship.</p>
+             <h4>The Tradition Grows</h4>
+          </div>
+        </article>
+      </div>
+
+      <div class="legacy-stats">
+        <div class="legacy-stat"><strong>3rd</strong><span>Generation<br>Legacy</span></div>
+        <div class="legacy-stat"><strong>1000+</strong><span>Weddings<br>Captured</span></div>
+        <div class="legacy-stat"><strong>15+</strong><span>Years of<br>Experience</span></div>
+        <div class="legacy-stat"><strong>Madurai  Based</strong><span> in<br>Tradition</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       ABOUT US · PAGE 02 · TODAY ARUN PROFESSIONAL PHOTOGRAPHER
+       ========================================================= -->
+  <div class="about-page owner-page" id="about-arun">
+    <div class="container">
+      <div class="owner-layout">
+        <div class="owner-photo">
+          <img src="images/arun-owner.jpg" alt="Arun — current owner and third generation professional photographer">
+          <div class="photo-caption">Arun · Third Generation</div>
+        </div>
+
+        <div class="owner-copy">
+          <div class="about-kicker">Today</div>
+          <h2 class="about-title">Arun</h2>
+          <h3>Third Generation Professional Photographer</h3>
+
+          <div class="owner-quote">“A perfect paradise to capture your happiness.”</div>
+
+          <p>
+            <strong>ARUN'S PHOTOGRAPHY</strong> is where the art of photography meets
+            passion, tradition, and timeless storytelling. Rooted in <strong>Madurai</strong>,
+            Arun continues a family legacy shaped by decades of trust, craftsmanship
+            and dedication to visual excellence.
+          </p>
+
+          <p>
+            Today, <strong>Arun</strong> leads the studio as the third-generation photographer,
+            bringing a fresh, cinematic approach to a tradition that has always been
+            about people and their stories.
+          </p>
+
+          <p>
+            With experience across <strong>1000+ weddings</strong>, the team specialises in
+            weddings, cultural ceremonies, family celebrations, couple stories and
+            professional visual storytelling — always with authenticity, emotion and elegance.
+          </p>
+
+          <div class="owner-pillars">
+            <div class="owner-pillar">
+              <div class="pillar-icon">◉</div>
+              <b>Creative Vision</b>
+              <span>Modern Frames</span>
+            </div>
+            <div class="owner-pillar">
+              <div class="pillar-icon">◎</div>
+              <b>Timeless Storytelling</b>
+              <span>Real Emotions</span>
+            </div>
+            <div class="owner-pillar">
+              <div class="pillar-icon">✦</div>
+              <b>Attention to Detail</b>
+              <span>Every Frame</span>
+            </div>
+            <div class="owner-pillar">
+              <div class="pillar-icon">♡</div>
+              <b>Passion for Perfection</b>
+              <span>Made With Care</span>
+            </div>
+          </div>
+
+          <div class="owner-drives">
+            <div class="owner-drives-title">What Drives Us</div>
+            <div class="drives-grid">
+              <div class="drive">
+                <div class="drive-icon">♧</div>
+                <h4>Our People</h4>
+                <p>We believe every picture reflects people, emotions and connections.</p>
+              </div>
+              <div class="drive">
+                <div class="drive-icon">◎</div>
+                <h4>Our Craft</h4>
+                <p>Blending tradition with technology to deliver meaningful masterpieces.</p>
+              </div>
+              <div class="drive">
+                <div class="drive-icon">✧</div>
+                <h4>Our Promise</h4>
+                <p>To capture your special moments with honesty, creativity and care.</p>
+              </div>
+              <div class="drive">
+                <div class="drive-icon">♢</div>
+                <h4>Our Purpose</h4>
+                <p>To turn your memories into timeless stories that last forever.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="owner-cta">
+            <p>Let us capture your moments and turn them into timeless memories.</p>
+            <a class="btn" href="#contact">Book Your Moment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Kind words from our couples</div>
+      <h2>Client Testimonials</h2>
+      <div class="ornament">✦</div>
+      <p>Real emotions, beautifully remembered.</p>
+    </div>
+    <div class="testimonials">
+      <article class="testimonial">
+        <span class="testimonial-tag">Wedding</span>
+        <div class="quote-mark">“</div>
+        <p>We booked Arun's Photography for our wedding, and the experience was exceptional.
+The entire team was friendly, professional, and very cooperative. The photo quality, candid shots, video coverage, edits, drone footage, and album design were all outstanding. .</p>
+        <div class="stars">★★★★★</div>
+        <div class="client"><div class="client-avatar">RS</div><div><b>Vignesh &amp; Peter</b><span>Wedding Couple</span></div></div>
+      </article>
+      <article class="testimonial">
+        <span class="testimonial-tag">Pre-Wedding</span>
+        <div class="quote-mark">“</div>
+        <p>Thank you so much for capturing our wedding so beautifully! Your team was very professional, punctual, and made us feel comfortable throughout the event. We loved your creative ideas and the cinematic touch you brought to every moment.</p>
+        <div class="stars">★★★★★</div>
+        <div class="client"><div class="client-avatar">AK</div><div><b>Abi &amp; Abirami</b><span>Pre-Wedding Couple</span></div></div>
+      </article>
+      <article class="testimonial">
+        <span class="testimonial-tag">Family</span>
+        <div class="quote-mark">“</div>
+        <p>We are beyond happy that we chose our wedding photographer for our entire wedding journey — from pre-wedding to post-wedding! Every single moment was captured so beautifully and naturally. The team made us feel super comfortable, and the photos came out absolutely magical.</p>
+        <div class="stars">★★★★★</div>
+        <div class="client"><div class="client-avatar">PM</div><div><b>
+Lingeshwaran &amp; R</b><span>Family Session</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="location-section" id="location">
+  <div class="container">
+    <div class="location-wrap">
+      <div class="location-copy">
+        <div class="eyebrow">LOCATION</div>
+        <h2>Madurai, <em>India.</em></h2>
+        <div class="rating">★★★★★ <span>Our Studio Location</span></div>
+        <p>Visit Arun's Photography for a personal consultation and let's plan the perfect way to capture your story.</p>
+        <div class="location-address">
+          <span>⌖</span>
+          <div><strong>Arun's Photography</strong><br>1st Floor, 372, N Masi St,<br>near Krishanan Temple, Madurai Main,<br>Madurai, Tamil Nadu 625001, India</div>
+        </div>
+        <a class="btn map-btn" href="https://maps.app.goo.gl/1p473RENT7wkKA6L9" target="_blank" rel="noopener">GET DIRECTIONS →</a>
+      </div>
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps?q=9.9228514%2C78.1172069&output=embed"
+          title="Arun's Photography location map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section why-choose" id="why-choose">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Why  Arun's Photography</div>
+      <h2>Why should you Choose Arun's Photography</h2>
+      <div class="ornament">✦</div>
+      <p>A trusted Madurai-based photography studio combining experience, legacy and cinematic storytelling to preserve every meaningful moment.</p>
+    </div>
+
+    <div class="why-grid">
+      <article class="why-card">
+        <span class="why-number">01</span>
+        <div class="why-icon">✦</div>
+        <h3>15+ Years Experience</h3>
+        <p>Years of refined craft, trusted service and real-world wedding experience.</p>
+      </article>
+
+      <article class="why-card featured">
+        <span class="why-number">02</span>
+        <div class="why-icon">◎</div>
+        <h3>1000+ Weddings Captured</h3>
+        <p>Thousands of celebrations documented with care, emotion and consistency.</p>
+      </article>
+
+      <article class="why-card">
+        <span class="why-number">03</span>
+        <div class="why-icon">♧</div>
+        <h3>3rd Generation Photography Legacy</h3>
+        <p>A family photography tradition carried forward with a modern visual approach.</p>
+      </article>
+
+      <article class="why-card">
+        <span class="why-number">04</span>
+        <div class="why-icon">◇</div>
+        <h3>Cinematic Storytelling</h3>
+        <p>Authentic moments shaped into elegant photographs and timeless films.</p>
+      </article>
+
+      <article class="why-card">
+        <span class="why-number">05</span>
+        <div class="why-icon">◉</div>
+        <h3>Professional Team</h3>
+        <p>A dedicated team focused on preparation, direction, timing and detail.</p>
+      </article>
+
+      <article class="why-card">
+        <span class="why-number">06</span>
+        <div class="why-icon">↗</div>
+        <h3>Available Worldwide</h3>
+        <p>Ready to travel and capture your story wherever your celebration takes place.</p>
+      </article>
+
+      <article class="why-card featured">
+        <span class="why-number">07</span>
+        <div class="why-icon">⌖</div>
+        <h3>Madurai Based</h3>
+        <p>Rooted in Madurai with a deep understanding of local traditions and celebrations.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact"><div class="container"><div class="contact-wrap"><div class="contact-info"><div class="eyebrow">Your special day</div><h2>Let's Capture Your<br>Beautiful Moments</h2><div class="ornament">✦</div><p>Have a special moment coming up? We would love to be a part of it.</p><a class="btn wa-btn" href="https://wa.me/919025166520" target="_blank">◉ Chat on WhatsApp</a><div class="contact-row">☎ <span>+91 90251 66520</span></div><div class="contact-row">⌖ <span>Madurai, Tamil Nadu, India</span></div></div><form class="form" id="bookingForm"><div class="field"><input id="name" required placeholder="Your Name"></div><div class="field"><input id="phone" required placeholder="Phone Number"></div><div class="field"><input id="event" placeholder="Event / Wedding Date"></div><div class="field"><textarea id="message" required placeholder="Tell us about your event..."></textarea></div><button type="submit">➤ Send Enquiry on WhatsApp</button></form></div></div></section>
+</main>
+<footer><div class="container footerin"><div class="footer-brand"><img src="images/aruns-logo.png" alt="Arun's Photography logo"><span>© 2026 Arun's Photography. All Rights Reserved.</span></div><div class="social">
+  <a href="https://www.facebook.com/share/1FmKF9nZ5v/" target="_blank" rel="noopener" aria-label="Facebook">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4.5c-.5-.1-1.7-.2-3.2-.2-3.2 0-5.4 2-5.4 5.5V13H5v4h3.4v7h4.1v-7H15l.6-4h-3.1V10c0-1.2.4-2 1.5-2Z"/></svg>
+  </a>
+  <a href="https://www.instagram.com/aruns_photography_madurai?igsi=MWF2d2dudW45b2M4bg==" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+  </a>
+</div></div></footer>
+<a href="https://www.instagram.com/aruns_photography_madurai?igsi=MWF2d2dudW45b2M4bg=="
+   target="_blank"
+   rel="noopener"
+   aria-label="Instagram"
+   style="
+position:fixed;
+right:16px;
+bottom:88px;
+width:52px;
+height:52px;
+z-index:99999;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 3px 12px rgba(0,0,0,0.30);
+"
+     overflow:hidden;
+   ">
+
+  <svg width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+    
+    <defs>
+      <linearGradient id="instagramGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#F58529"/>
+        <stop offset="35%" stop-color="#DD2A7B"/>
+        <stop offset="70%" stop-color="#8134AF"/>
+        <stop offset="100%" stop-color="#515BD4"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Instagram background -->
+    <rect width="52" height="52" rx="12" fill="url(#instagramGradient)"/>
+
+    <!-- Instagram camera outline -->
+    <rect x="13" y="13" width="26" height="26"
+          rx="8"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="3"/>
+
+    <!-- Camera lens -->
+    <circle cx="26" cy="26" r="6"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="3"/>
+
+    <!-- Small camera dot -->
+    <circle cx="34" cy="18" r="2"
+            fill="#ffffff"/>
+  </svg>
+
+</a>
+<a class="float-wa" href="https://wa.me/919025166520" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12.05 0C5.48 0 .14 5.34.14 11.91c0 2.1.55 4.15 1.59 5.96L.05 24l6.27-1.64a11.9 11.9 0 0 0 5.73 1.46h.01c6.56 0 11.9-5.34 11.9-11.91 0-3.18-1.23-6.17-3.46-8.41ZM12.06 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.72.97.99-3.63-.23-.37a9.88 9.88 0 1 1 8.36 4.62Zm5.42-7.39c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.46-.88-.78-1.48-1.74-1.65-2.03-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg></a>
+<div class="lightbox" id="lightbox"><button class="close" id="close">×</button><button class="lb-arrow lb-prev" id="lbPrev">‹</button><img id="lbImg" alt="Fullscreen portfolio image"><button class="lb-arrow lb-next" id="lbNext">›</button></div>
+<script>
+const WHATSAPP='919025166520';
+const header=document.getElementById('header');window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>40));
+const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');menu.onclick=()=>nav.classList.toggle('open');document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const slides=[...document.querySelectorAll('.slide')],dots=[...document.querySelectorAll('.hero-dot')];let current=0,timer;
+function showSlide(i){current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===current));dots.forEach((d,n)=>d.classList.toggle('active',n===current));}
+function auto(){clearInterval(timer);timer=setInterval(()=>showSlide(current+1),5500)}
+document.getElementById('prev').onclick=()=>{showSlide(current-1);auto()};document.getElementById('next').onclick=()=>{showSlide(current+1);auto()};dots.forEach(d=>d.onclick=()=>{showSlide(+d.dataset.i);auto()});auto();
+const gallery=[...document.querySelectorAll('.portfolio-image, .fg img')],lb=document.getElementById('lightbox'),lbImg=document.getElementById('lbImg');let li=0;
+function openLb(i){li=(i+gallery.length)%gallery.length;lbImg.src=gallery[li].src;lbImg.alt=gallery[li].alt;lb.classList.add('open');document.body.style.overflow='hidden'}
+gallery.forEach((im,i)=>im.onclick=(e)=>{e.preventDefault();openLb(i)});document.getElementById('close').onclick=()=>{lb.classList.remove('open');document.body.style.overflow=''};document.getElementById('lbPrev').onclick=()=>openLb(li-1);document.getElementById('lbNext').onclick=()=>openLb(li+1);lb.onclick=e=>{if(e.target===lb)document.getElementById('close').click()};document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')document.getElementById('close').click();if(e.key==='ArrowLeft')openLb(li-1);if(e.key==='ArrowRight')openLb(li+1)});
+document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const n=document.getElementById('name').value,p=document.getElementById('phone').value,ev=document.getElementById('event').value,m=document.getElementById('message').value;const text=`Hello Arun's Photography!%0A%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AEvent/Date: ${encodeURIComponent(ev)}%0AMessage: ${encodeURIComponent(m)}`;window.open(`https://wa.me/${WHATSAPP}?text=${text}`,'_blank')});
+</script>
+</body></html>

@@ -1,0 +1,118 @@
+ARUN'S PHOTOGRAPHY — PHOTO COLLECTION PLAN
+===========================================
+
+The site now has FOUR photography collections only:
+1. Wedding Photography
+2. Couples / Pre & Post-Wedding
+3. Baby Photography
+4. Traditional Photography
+
+The previous cinematic-related collection has been removed.
+
+CURRENT MIXED PHOTOS CLASSIFIED
+- Wedding: gallery-10 -> images/wedding/01.jpg
+- Couples / Pre & Post-Wedding: gallery-01, gallery-02, gallery-06, gallery-07 -> images/couples-pre-post-wedding/01-04.jpg
+- Baby: gallery-04, gallery-05 -> images/baby/01-02.jpg
+- Traditional: gallery-03, gallery-08, gallery-09 -> images/traditional/01-03.jpg
+
+CONTINUOUS 10-IMAGE WORKFLOW
+When the user supplies another mixed batch, classify each image into the four correct sections and append sequentially (05-14, etc.). The homepage shows four preview images per collection where four unique images are available, and View More opens collection.html for the full category.
+
+No cinematic collection is included.
+
+
+BATCH 02 — IMAGES 11-20
+- Couples / Pre & Post-Wedding: uploaded 11, 12, 18 -> appended as 14-16
+- Wedding: uploaded 13, 14, 15, 16, 17 -> appended as 03-07
+- Baby Photography: uploaded 19, 20 (maternity portraits, placed in the existing Baby collection to preserve the site's four-section structure) -> appended as 03-04
+
+CURRENT TOTAL AFTER BATCH 02: 30 IMAGES
+- Wedding: 7
+- Couples / Pre & Post-Wedding: 16
+- Baby: 4
+- Traditional: 3
+
+Homepage preview update: Wedding now shows four preview images (01-04). Couples and Baby already show four. Traditional has only three unique images in the current 30-image set, so no duplicate or misclassified image was added. View More continues to open the complete collection. No CSS/layout/design changes were made.
+
+
+COLLECTION PAGE FIX
+- Homepage keeps 4 curated preview images per section.
+- View More / Collection page now renders every image listed for that category.
+- Collection data is embedded in collection.html so it works when the website is opened directly from a local file (file://), without relying on fetch/JSON loading.
+- No design, layout, colors, typography, or homepage structure changed.
+
+
+Batch 03 / Images 41–51 (10 new images; source numbering skips 43):
+- Maternity: 02.jpg, 03.jpg (source 41, 42)
+- Couples / Pre & Post-Wedding: 17.jpg–20.jpg (source 44–47)
+- Traditional: 04.jpg–07.jpg (source 48–51)
+Total portfolio collection images: 50.
+
+
+BATCH 04 / IMAGES 52–61 — 10 NEW IMAGES
+- Couples / Pre & Post-Wedding: source 52 -> appended as 21
+- Wedding: sources 53, 54, 61 -> appended as 16-18
+- Maternity: source 55 -> appended as 04
+- Traditional: sources 56-60 -> appended as 08-12
+
+CURRENT TOTAL AFTER BATCH 04: 60 IMAGES
+- Wedding: 18
+- Couples / Pre & Post-Wedding: 21
+- Baby: 5
+- Traditional: 12
+- Maternity: 4
+
+No CSS/layout/design changes were made.
+
+
+BATCH 05 / IMAGES 62–71 — 10 NEW IMAGES
+- Wedding: sources 62, 63 -> appended as 19-20
+- Baby: sources 64, 65 -> appended as 06-07
+- Couples / Pre & Post-Wedding: source 66 -> appended as 22
+- Traditional: sources 67-71 -> appended as 13-17
+
+CURRENT TOTAL AFTER BATCH 05: 70 IMAGES.
+No CSS/layout/design changes were made.
+
+BATCH 06 / IMAGES 72–78 — 7 NEW IMAGES
+- Baby Photography: sources 72, 73, 74 -> appended as 08-10
+- Wedding: sources 75, 76 -> appended as 21-22
+- Couples / Pre & Post-Wedding: sources 77, 78 -> appended as 23-24
+
+CURRENT TOTAL AFTER BATCH 06: 77 IMAGES.
+- Wedding: 22
+- Couples / Pre & Post-Wedding: 24
+- Baby: 10
+- Traditional: 17
+- Maternity: 4
+
+No CSS/layout/design changes were made.
+
+BATCH 08 / IMAGES 82–91 — 10 NEW IMAGES
+- Wedding Photography: sources 82, 83, 84, 85 -> appended as 23-26
+- Maternity Photography: sources 86, 87, 88, 89 -> appended as 05-08
+- Couples / Pre & Post-Wedding: sources 90, 91 -> appended as 25-26
+
+CURRENT TOTAL AFTER BATCH 08: 87 IMAGES.
+- Wedding: 26
+- Couples / Pre & Post-Wedding: 26
+- Baby: 10
+- Traditional: 17
+- Maternity: 8
+
+Collection page grids were rebuilt from collections.json to ensure every numbered image is displayed. No CSS/layout/design changes were made.
+
+
+BATCH 09 / IMAGES 92–101 — 10 NEW IMAGES
+- Baby Photography: sources 92, 93, 94, 95 -> appended as 11-14
+- Wedding Photography: sources 96, 97, 98, 99, 100 -> appended as 27-31
+- Couples / Pre & Post-Wedding: source 101 -> appended as 27
+
+CURRENT TOTAL AFTER BATCH 09: 97 IMAGES.
+- Wedding: 31
+- Couples / Pre & Post-Wedding: 27
+- Baby: 14
+- Traditional: 17
+- Maternity: 8
+
+No CSS/layout/design changes were made.
