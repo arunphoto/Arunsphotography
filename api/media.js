@@ -47,6 +47,7 @@ function cleanSlot(slot, ext){
   return `${slot}.${ext}`;
 }
 function imagePath(category,slot){
+  const clean=cleanSlot(slot,'jpg');
   const allowed={
     wedding:'images/wedding',
     couples:'images/couples-pre-post-wedding',
@@ -54,8 +55,13 @@ function imagePath(category,slot){
     traditional:'images/traditional',
     maternity:'images/maternity'
   };
+  if(category==='gallery'){
+    const gallerySlots=['01','02','03','04','06','10'];
+    if(!gallerySlots.includes(slot)) throw Object.assign(new Error('Invalid gallery slot'),{status:400});
+    return `images/gallery-${clean}`;
+  }
   if(!allowed[category]) throw Object.assign(new Error('Invalid collection'),{status:400});
-  return `${allowed[category]}/${cleanSlot(slot,'jpg')}`;
+  return `${allowed[category]}/${clean}`;
 }
 function homePath(slot){if(!/^hero-[1-3]$/.test(slot)) throw Object.assign(new Error('Invalid home slot'),{status:400});return `images/${slot}.jpg`;}
 function videoPath(slot){if(!/^cinematic-(01|02|03|04|06|07|08|09|10)$/.test(slot)) throw Object.assign(new Error('Invalid video slot'),{status:400});return `videos/${slot}.mp4`;}
